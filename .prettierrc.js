@@ -1,9 +1,17 @@
 module.exports = {
-  printWidth: 120,
+  printWidth: 100,
   tabWidth: 2,
   useTabs: false,
   semi: false,
-  singleQuote: true,
+  vueIndentScriptAndStyle: true,
+  singleQuote: true, // 单引号
+  quoteProps: 'as-needed',
+  bracketSpacing: true,
+  trailingComma: 'none',
   arrowParens: 'always',
-  bracketSpacing: false,
+  insertPragma: false,
+  requirePragma: false,
+  proseWrap: 'never',
+  htmlWhitespaceSensitivity: 'strict',
+  endOfLine: 'auto'
 }

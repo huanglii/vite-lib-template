@@ -3,15 +3,14 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true,
+    es2021: true
   },
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
+    'prettier'
   ],
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint']
 }
