@@ -6,10 +6,13 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
   </head>
   <body>
+    <script src="./dist/index.umd.js"></script>
     <script type="module">
-      import { test } from './src/index.ts'
+      import { test } from './dist/index.js'
 
-      test()
+      test('test1')
+
+      MyLib.test('test2')
     </script>
   </body>
 </html>

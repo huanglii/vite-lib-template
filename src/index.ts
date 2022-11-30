@@ -1,3 +1,3 @@
-export function test() {
-  console.log('hello vite lib')
+export function test(s: string) {
+  console.log('hello vite lib', s)
 }
