@@ -1,6 +1,7 @@
 .vscode
-node_modules/
 dist/
+node_modules/
+temp
 
 package-lock.json
 yarn.lock

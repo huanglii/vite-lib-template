@@ -1,7 +1,7 @@
 /**
- * test function
- * @param s - the input string
+ * hello
+ * @beta
  */
-export function test(s: string): void {
-  console.log('hello vite lib', s)
+export function hello(): void {
+  console.log('hello vite lib')
 }

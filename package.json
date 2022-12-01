@@ -15,22 +15,22 @@
       "require": "./dist/index.umd.js"
     }
   },
-  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "sideEffects": false,
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "npm-run-all build:*",
     "build:umd": "vite build",
     "build:es": "tsc",
-    "prepublishOnly": "npm-run-all build:*",
-    "eslint:comment": "使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .js 和 .ts 的文件",
+    "build": "npm-run-all build:umd build:es",
+    "api-extractor": "npx api-extractor run --local --verbose",
+    "api-documenter": "api-documenter markdown -i ./temp/ -o ./docs/",
+    "build:docs": "npm-run-all build api-extractor api-documenter",
+    "prepublishOnly": "npm-run-all build:umd build:es",
     "eslint": "eslint --ext .js,.ts --ignore-path .gitignore --fix \"src/**/*.ts\"",
-    "prettier:comment": "自动格式化当前目录下的所有文件",
     "prettier": "prettier .  --write",
-    "commit:comment": "引导设置规范化的提交信息",
     "commit": "git-cz",
     "prepare": "husky install"
   },
@@ -48,6 +48,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@microsoft/api-documenter": "^7.19.25",
+    "@microsoft/api-extractor": "^7.33.6",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
