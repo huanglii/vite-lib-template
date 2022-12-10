@@ -1,7 +1,7 @@
 /**
- * hello
+ * add
  * @beta
  */
-export function hello(): void {
-  console.log('hello vite lib')
+export function add(a: number, b: number): number {
+  return a + b
 }

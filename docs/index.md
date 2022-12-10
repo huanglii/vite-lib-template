@@ -6,7 +6,6 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [vite-lib-template](./vite-lib-template.md) |  |
-
+| Package                                     | Description |
+| ------------------------------------------- | ----------- |
+| [vite-lib-template](./vite-lib-template.md) |             |

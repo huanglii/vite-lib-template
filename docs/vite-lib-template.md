@@ -6,7 +6,6 @@
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [hello()](./vite-lib-template.hello.md) | <b><i>(BETA)</i></b> hello |
-
+| Function                                | Description              |
+| --------------------------------------- | ------------------------ |
+| [add(a, b)](./vite-lib-template.add.md) | <b><i>(BETA)</i></b> add |

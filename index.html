@@ -8,11 +8,11 @@
   <body>
     <script src="./dist/index.umd.js"></script>
     <script type="module">
-      import { test } from './dist/index.js'
+      import { add } from './dist/index.js'
 
-      test('test1')
+      console.log(add(1, 2))
 
-      MyLib.test('test2')
+      console.log(MyLib.add(3, 4))
     </script>
   </body>
 </html>

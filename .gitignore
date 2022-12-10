@@ -2,6 +2,7 @@
 dist/
 node_modules/
 temp
+test/coverage/
 
 package-lock.json
 yarn.lock
