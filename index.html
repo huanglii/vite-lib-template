@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>vite lib</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  </head>
-  <body>
-    <script src="./dist/index.umd.cjs"></script>
-    <script type="module">
-      import { add } from './dist/index.js'
+<html lang="zh-Hans-CN">
 
-      console.log(add(1, 2))
+<head>
+  <title>Vite Lib</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-      console.log(ClogMap.add(3, 4))
-    </script>
-  </body>
+  </style>
+</head>
+
+<body>
+  <script type="module" src="./tests/index.ts"></script>
+</body>
+
 </html>

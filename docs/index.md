@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "ClogMap"
-  text: "A WebGL interactive maps library for meteorological visualization"
-  tagline: My great project tagline
+  name: 'ClogMap'
+  text: 'WebGL 交互式气象可视化地图库'
+  tagline:
+  image:
+    # src: /logo.png
+    alt: ClogMap
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速开始
+      link: /starter
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: API References
+      link: /api
 
 features:
   - title: Feature A
@@ -22,4 +25,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

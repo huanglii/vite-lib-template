@@ -1,35 +1,60 @@
 {
   "name": "clogmap",
-  "version": "0.1.0",
-  "description": "clogmap",
-  "repository": "https://github.com/naivemap/vite-lib-template",
-  "keywords": [],
-  "author": "huangli",
-  "license": "BSD-3-Clause",
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.mjs",
+  "version": "0.0.0",
+  "description": "A WebGL interactive maps library for meteorological visualization",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.umd.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "huangli",
+  "license": "BSD-3-Clause",
   "types": "./dist/index.d.ts",
+  "repository": "https://github.com/huanglii/clogmap",
+  "publishConfig": {
+    "registry": "http://repo.cqmb.gov.cn/repository/npm-hosted/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "test": "vitest"
+    "gen-docs-example": "node ./scripts/gen-docs-example.js",
+    "docs:dev": "pnpm gen-docs-example && concurrently \"typedoc --watch\" \"vitepress dev docs\"",
+    "docs:build": "pnpm gen-docs-example && typedoc && vitepress build docs",
+    "docs:preview": "pnpm gen-docs-example && vitepress preview docs",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "@types/node": "^22.14.0",
-    "typescript": "^5.8.2",
+    "@vitest/coverage-v8": "^3.1.1",
+    "@vitest/ui": "^3.1.1",
+    "concurrently": "^9.1.2",
+    "less": "^4.3.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "shiki": "^3.2.1",
+    "typedoc": "^0.28.2",
+    "typedoc-plugin-markdown": "^4.6.1",
+    "typescript": "^5.8.3",
     "vite": "^6.2.5",
+    "vite-plugin-bundle-obfuscator": "^1.4.2",
     "vite-plugin-dts": "^4.5.3",
     "vitepress": "2.0.0-alpha.4",
     "vitest": "^3.1.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "javascript-obfuscator"
+    ]
   }
 }
