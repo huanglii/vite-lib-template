@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "ClogMap"
-  text: "A WebGL interactive maps library for meteorological visualization"
-  tagline: My great project tagline
+  name: 'Lib'
+  text: 'A JavaScript library template built with Vite'
+  tagline:
+  image:
+    src: /logo.svg
+    alt: Lib
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速开始
+      link: /starter
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: API References
+      link: /api
 
 features:
   - title: Feature A
@@ -22,4 +25,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
