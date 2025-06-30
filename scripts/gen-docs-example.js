@@ -31,7 +31,6 @@ function generateExamplesFolder() {
   const demoFiles = fs.readdirSync(demosFolder).filter((f) => f.endsWith('html'))
   for (const file of demoFiles) {
     const htmlFile = path.join(demosFolder, file)
-    console.log(htmlFile)
     const htmlContent = fs.readFileSync(htmlFile, 'utf-8')
     const htmlContentLines = htmlContent.split('\n')
     const title = htmlContentLines

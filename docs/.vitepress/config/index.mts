@@ -11,8 +11,9 @@ import { pascalToKebab, singularToPlural } from './util'
 export default defineConfig({
   lang: 'zh-Hans-CN',
   title: 'Lib',
-  titleTemplate: 'Lib',
+  // titleTemplate: 'Lib',
   description: 'A JavaScript library template built with Vite',
+  base: '/vite-lib-template/',
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   cleanUrls: true,
   rewrites: {
@@ -145,7 +146,7 @@ function sidebarApi(): DefaultTheme.SidebarItem[] {
 function sidebarExamples(): DefaultTheme.SidebarItem[] {
   const __dirname = dirname(fileURLToPath(import.meta.url))
   const folder = resolve(__dirname, '../../public/demos')
-  const files = fs.readdirSync(folder)
+  const files = fs.readdirSync(folder).filter((f) => f.endsWith('html'))
 
   const res: DefaultTheme.SidebarItem[] = []
   files.forEach((file) => {
