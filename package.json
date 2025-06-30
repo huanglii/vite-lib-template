@@ -32,9 +32,8 @@
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
     "changeset:status": "changeset status",
-    "release": "pnpm build && changeset publish"
-  },
-  "dependencies": {
+    "release": "pnpm build && changeset publish",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
@@ -44,6 +43,7 @@
     "concurrently": "^9.2.0",
     "less": "^4.3.0",
     "markdown-it-mathjax3": "^4.3.2",
+    "prettier": "3.6.2",
     "shiki": "^3.7.0",
     "typedoc": "^0.28.6",
     "typedoc-plugin-markdown": "^4.7.0",
@@ -53,10 +53,5 @@
     "vite-plugin-dts": "^4.5.4",
     "vitepress": "2.0.0-alpha.7",
     "vitest": "^3.2.4"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "javascript-obfuscator"
-    ]
   }
 }

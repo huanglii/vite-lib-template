@@ -14,7 +14,7 @@ export default defineConfig({
   // titleTemplate: 'Lib',
   description: 'A JavaScript library template built with Vite',
   base: '/vite-lib-template/',
-  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+  head: [['link', { rel: 'icon', href: '/vite-lib-template/logo.svg' }]],
   cleanUrls: true,
   rewrites: {
     '(.*)/README.md': '(.*)/index.md'

@@ -38,9 +38,7 @@ function generateExamplesFolder() {
       .replace('<title>', '')
       .replace('</title>', '')
       .trim()
-    const description = htmlContentLines
-      .find((l) => l.includes('og:description'))
-      .replace(/.*content=\"(.*)\".*/, '$1')
+    const description = htmlContentLines.find((l) => l.includes('og:description')).replace(/.*content=\"(.*)\".*/, '$1')
 
     const mdFileName = file.replace('.html', '.md')
     const exampleMarkdown = generateMarkdownForExample(title, description, file, htmlContent)

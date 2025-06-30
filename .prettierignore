@@ -1,2 +1,5 @@
+.changeset/
+.github/
 dist/
-test/coverage/
+docs/examples/
+tests/coverage/
