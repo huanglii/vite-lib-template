@@ -1,7 +1,7 @@
 
 # 显示地图
 
-显示卫星地图
+显示地图
 
 <iframe src="/demos/display-map.html" width="100%" style="border:none; height:400px"></iframe>
 
@@ -11,7 +11,7 @@
 
 <head>
   <title>显示地图</title>
-  <meta property="og:description" content="显示卫星地图" />
+  <meta property="og:description" content="显示地图" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.3.0/dist/maplibre-gl.css" />
