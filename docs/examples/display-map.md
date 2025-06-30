@@ -33,11 +33,10 @@
 <body>
   <div id="map"></div>
   <script>
-    const MAPTILER_KEY = 'get_your_own_OpIi9ZULNHzrESv6T2vL'
     const map = new maplibregl.Map({
-      style: '/styles/satellite.json',
+      container: 'map',
+      style: 'https://www.naivemap.com/demotiles/style.json',
       center: [118.9819, 25.39847],
-      container: 'map'
     })
   </script>
 </body>

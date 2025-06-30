@@ -10,10 +10,10 @@ import { pascalToKebab, singularToPlural } from './util'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans-CN',
-  title: 'ClogMap',
-  titleTemplate: 'ClogMap',
-  description: 'A WebGL interactive maps library for meteorological visualization',
-  head: [['link', { rel: 'icon', href: '/logo.png' }]],
+  title: 'Lib',
+  titleTemplate: 'Lib',
+  description: 'A JavaScript library template built with Vite',
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   cleanUrls: true,
   rewrites: {
     '(.*)/README.md': '(.*)/index.md'
@@ -29,8 +29,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: {
-      light: '/logo.png',
-      dark: '/logo.png'
+      light: '/logo.svg',
+      dark: '/logo.svg'
     },
     nav: [
       { text: '快速开始', link: '/starter' },
@@ -49,17 +49,17 @@ export default defineConfig({
     },
     socialLinks: [
       {
-        icon: 'gitlab',
-        link: 'https://gitlab.cqmb.gov.cn/frontend-group/clogmap'
+        icon: 'github',
+        link: 'https://github.com/huanglii/vite-lib-template'
       }
     ],
     editLink: {
-      pattern: 'https://gitlab.cqmb.gov.cn/frontend-group/clogmap/edit/main/docs/:path',
-      text: '在 GitLab 上编辑此页面'
+      pattern: 'https://github.com/huanglii/vite-lib-template/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页面'
     },
     footer: {
       // message: '基于 MIT 许可发布',
-      copyright: `版权所有 © 2025-${new Date().getFullYear()} clog`
+      copyright: `版权所有 © 2025-${new Date().getFullYear()} naivemap`
     },
     docFooter: {
       prev: '上一篇',

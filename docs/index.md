@@ -3,12 +3,12 @@
 layout: home
 
 hero:
-  name: 'ClogMap'
-  text: 'WebGL 交互式气象可视化地图库'
+  name: 'Lib'
+  text: 'A JavaScript library template built with Vite'
   tagline:
   image:
-    # src: /logo.png
-    alt: ClogMap
+    src: /logo.svg
+    alt: Lib
   actions:
     - theme: brand
       text: 快速开始

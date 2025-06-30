@@ -5,15 +5,15 @@
 ::: code-group
 
 ```sh [pnpm]
-$ pnpm add clogmap
+$ pnpm add **
 ```
 
 ```sh [npm]
-$ npm add clogmap
+$ npm add **
 ```
 
 ```sh [yarn]
-$ yarn add clogmap
+$ yarn add **
 ```
 
 :::

@@ -2,7 +2,7 @@
   "$schema": "https://typedoc-plugin-markdown.org/schema.json",
   "lang": "zh",
   "entryPoints": ["./src/index.ts"],
-  "name": "vitelib",
+  "name": "vite-lib-template",
   "out": "docs/api",
   "json": "docs/api/api.json",
   "plugin": ["typedoc-plugin-markdown"],
